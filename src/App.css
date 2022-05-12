@@ -8,9 +8,36 @@
   font-family: 'Ultra', serif;
   font-size: 25px; 
   color: #FFE81F;
-  background-color: #33373E;
+  background-color: black;
   font-size: 45px;
+  padding-bottom: 10px;
+}
+
+.bodyDiv {
+  display: grid;
+  /* grid-template-columns: 50px 50px 50px 50px 50px; */
+  /* grid-template-rows: 50px auto 50px; */
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+  color: #FFE81F;
+  list-style: none;  
+  line-height: 50px;
+  border: 1px solid purple;
+
+}
+
+.oneShip {
+  
 }
 
 
+/* My CSS Dream */
 
+/* 
+1. background to be black on the main page or that lighter black that it already is, would also be fine. 
+2. each ship should be in its own little rounded block
+3. each ship block should be a different color based on the colors of the lightsabers (blue, green, purple, yellow)
+4. enable hover effect when hovering over the ship
+5. each ship should have it's own image that is also a link (I saved images for each of the ten displayed currently in my notes app)
+6. the link should take you to the api's website for that ship or that ships url (? maybe?) */
