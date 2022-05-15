@@ -5,7 +5,11 @@ function Body(props) {
     <div className="bodyDiv">
       {props.starship.map((ship, index) => {
         console.log(ship);
-        return <div key={index}>{ship.name}</div>;
+        return (
+          <div key={index} className="shipBox">
+            {ship.name}
+          </div>
+        );
       })}
     </div>
   );
