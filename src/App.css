@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #33373E;
+  background-color: black;
+  background-image: url(https://p0.piqsels.com/preview/545/792/946/minimalism-clean-beautiful-background.jpg);
 }
 
 
@@ -32,9 +33,8 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  border: 1px solid purple;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   color: #FFE81F;
   line-height: 50px;
 }
@@ -43,8 +43,11 @@
   height: 150px;
   width: 150px;
   display: flex;
-  justify-content: space-evenly;
-  background-color: blue;
+  justify-content: space-around;
+  background-color: #548c9c;
+  row-gap: 40px;
+  column-gap: 40px;
+  border: 1px solid #FFE81F;
 }
 
 /* My CSS Dream */
