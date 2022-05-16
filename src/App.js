@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Body from "./components/Body";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   //state to hold ship info
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Header />
       <Body starship={starship} />
+      <Footer />
     </div>
   );
 }

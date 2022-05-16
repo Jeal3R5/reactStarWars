@@ -2,6 +2,8 @@
   text-align: center;
   background-color: black;
   background-image: url(https://p0.piqsels.com/preview/545/792/946/minimalism-clean-beautiful-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -12,22 +14,9 @@
   background-color: black;
   font-size: 45px;
   padding-bottom: 10px;
+  margin: 0;
 }
 
-/* .bodyDiv {
-  display: grid;
-  grid-template-columns: 50px auto 50px;
-  grid-template-rows: 50px auto 50px;
-  gap: 10px;
-  margin: 10px;
-  padding: 10px;
-  color: #FFE81F;
-  list-style: none;  
-  line-height: 50px;
-  border: 1px solid purple;   
-  justify-items: center;
-
-} */
 
 .bodyDiv {
   display: grid;
@@ -50,12 +39,21 @@
   border: 1px solid #FFE81F;;
 }
 
+.footer {
+  /* position: fixed; */
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+
+
 /* My CSS Dream */
 
 /* 
-1. background to be black on the main page or that lighter black that it already is, would also be fine. 
-2. each ship should be in its own little rounded block
-3. each ship block should be a different color based on the colors of the lightsabers (blue, green, purple, yellow)
+
 4. enable hover effect when hovering over the ship
 5. each ship should have it's own image that is also a link (I saved images for each of the ten displayed currently in my notes app)
-6. the link should take you to the api's website for that ship or that ships url (? maybe?) */
+6. the link should take you to the api's website for that ship or that ships url (? maybe?) 
+7. get the ship box to have a ship name and image on one side of card and then onClick the card flips over w/ the ships info on it.
+8. get the webpage to be full page instead of half*/
