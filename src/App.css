@@ -8,7 +8,6 @@
   
 }
 
-
 .headTitle {
   font-family: 'Ultra', serif;
   font-size: 25px; 
@@ -27,10 +26,6 @@
   align-items: center;
 }
 
-
-
-
-
 .bodyDiv {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -41,7 +36,7 @@
   line-height: 50px;
 }
 
-.shipBox {
+/* .shipBox {
   height: 150px;
   width: 150px;
   display: flex;
@@ -51,7 +46,61 @@
   column-gap: 40px;
   border: 1px solid #FFE81F;
   align-items: center;
+} */
+
+/* //////////////////////////////////////////////// */
+/* // FLIPCARD CSS */
+
+.ship-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px; 
+  border: 1px solid #FFE81F;
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-around;
+  row-gap: 40px;
+  align-items: center;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 15px;
 }
+
+.ship-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.ship-card:hover .ship-card-inner {
+  transform: rotateY(180deg);
+}
+
+.ship-card-front, .ship-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ship-card-front {
+  background-color: #548c9c;
+  color: #FFE81F;
+}
+
+.ship-card-back {
+  background-color: #2e4558;
+  color:#FFE81F;
+  transform: rotateY(180deg);
+}
+
+.ship-card a{
+  color: #FFE81F
+}
+/* /////////////////////////////////////////////////////// */
 
 .footer {
   /* position: fixed; */
@@ -62,12 +111,3 @@
 
 
 
-/* My CSS Dream */
-
-/* 
-
-4. enable hover effect when hovering over the ship
-5. each ship should have it's own image that is also a link (I saved images for each of the ten displayed currently in my notes app)
-6. the link should take you to the api's website for that ship or that ships url (? maybe?) 
-7. get the ship box to have a ship name and image on one side of card and then onClick the card flips over w/ the ships info on it.
-8. get the webpage to be full page instead of half*/
