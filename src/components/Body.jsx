@@ -33,8 +33,7 @@ function Body(props) {
                 <div class="ship-card-back">
                   <div>{ship.model}</div>
                   <br />
-                  <div>{ship.starship_url}</div>
-                  <a href="{ship.url}">For more details...</a>
+                  <a href={ship.url}>For more details...</a>
                 </div>
               </div>
             </div>
