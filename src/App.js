@@ -21,7 +21,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Body starship={starship} />
+      <div className="body">
+        <Body starship={starship} />
+      </div>
       <Footer />
     </div>
   );
